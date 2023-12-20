@@ -1,37 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingView Widget</title>
+</head>
+<body>
+
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-      {
-        "symbols": [
-          {
-            "description": "",
-            "proName": "OANDA:EURUSD"
-          },
-          {
-            "description": "",
-            "proName": "OANDA:EURCAD"
-          },
-          {
-            "description": "",
-            "proName": "CAPITALCOM:AU200AU"
-          },
-          {
-            "description": "",
-            "proName": "PEPPERSTONE:GER40"
-          },
-          {
-            "description": "",
-            "proName": "CAPITALCOM:HK50"
-          }
-        ],
-        "showSymbolLogo": true,
-        "isTransparent": false,
-        "displayMode": "adaptive",
-        "colorTheme": "light",
-        "locale": "en"
-      }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-  
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "light",
+  "dateRange": "12M",
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "showFloatingTooltip": true,
+  "width": "600",
+  "height": "800",
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "rgba(106, 109, 120, 1)",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Hard Commodities",
+      "symbols": [
+        {
+          "s": "CAPITALCOM:GOLD",
+          "d": "Gold"
+        },
+        {
+          "s": "CAPITALCOM:SILVER",
+          "d": "Silver"
+        },
+        {
+          "s": "CAPITALCOM:COPPER",
+          "d": "Copper"
+        },
+        {
+          "s": "CAPITALCOM:TSI",
+          "d": "Iron"
+        },
+        {
+          "s": "CAPITALCOM:PALLADIUM",
+          "d": "Palladium"
+        },
+        {
+          "s": "CAPITALCOM:PLATINUM",
+          "d": "Platinum"
+        },
+        {
+          "s": "CAPITALCOM:ALUMINUM",
+          "d": "Aluminum"
+        },
+        {
+          "s": "CAPITALCOM:LEAD",
+          "d": "Lead"
+        },
+        {
+          "s": "PEPPERSTONE:ZINC",
+          "d": "Zinc"
+        },
+        {
+          "s": "BLACKBULL:WTI",
+          "d": "USA Oil"
+        },
+        {
+          "s": "CAPITALCOM:NATURALGAS",
+          "d": "USA Gas"
+        },
+        {
+          "s": "PEPPERSTONE:NICKEL"
+        },
+        {
+          "s": "COMEX:UX1!",
+          "d": "Uranium"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Soft Commodities",
+      "symbols": [
+        {
+          "s": "PEPPERSTONE:WHEAT"
+        },
+        {
+          "s": "PEPPERSTONE:CORN"
+        },
+        {
+          "s": "PEPPERSTONE:SOYBEANS"
+        },
+        {
+          "s": "PEPPERSTONE:COFFEE"
+        },
+        {
+          "s": "PEPPERSTONE:COCOA"
+        },
+        {
+          "s": "PEPPERSTONE:OJ"
+        },
+        {
+          "s": "PEPPERSTONE:SUGAR"
+        },
+        {
+          "s": "PEPPERSTONE:COTTON"
+        },
+        {
+          "s": "PEPPERSTONE:RGHRICE"
+        },
+        {
+          "s": "PEPPERSTONE:LUMBER"
+        }
+      ]
+    },
+    {
+      "title": "Interst Rates",
+      "symbols": [
+        {
+          "s": "ECONOMICS:USINTR"
+        },
+        {
+          "s": "ECONOMICS:EUINTR"
+        },
+        {
+          "s": "ECONOMICS:GBINTR"
+        },
+        {
+          "s": "ECONOMICS:JPINTR"
+        },
+        {
+          "s": "ECONOMICS:CHINTR"
+        },
+        {
+          "s": "ECONOMICS:CNINTR"
+        },
+        {
+          "s": "ECONOMICS:CAINTR"
+        },
+        {
+          "s": "ECONOMICS:AUINTR"
+        },
+        {
+          "s": "ECONOMICS:BRINTR"
+        },
+        {
+          "s": "ECONOMICS:NOINTR"
+        },
+        {
+          "s": "ECONOMICS:NZINTR"
+        },
+        {
+          "s": "ECONOMICS:KRINTR"
+        },
+        {
+          "s": "ECONOMICS:HKINTR"
+        },
+        {
+          "s": "ECONOMICS:SGINTR"
+        }
+      ]
+    },
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "VANTAGE:SP500",
+          "d": "S&P 500"
+        },
+        {
+          "s": "CAPITALCOM:US100",
+          "d": "NASDAQ 100"
+        },
+        {
+          "s": "CAPITALCOM:EU50",
+          "d": "EUROPA 50"
+        },
+        {
+          "s": "PEPPERSTONE:GER40"
+        },
+        {
+          "s": "PEPPERSTONE:FRA40"
+        },
+        {
+          "s": "FOREXCOM:ITA40",
+          "d": "ITALY 40"
+        },
+        {
+          "s": "CAPITALCOM:SP35"
+        },
+        {
+          "s": "CAPITALCOM:UK100"
+        },
+        {
+          "s": "FOREXCOM:CH20",
+          "d": "SWITZERLAND 20"
+        },
+        {
+          "s": "PEPPERSTONE:NOR25",
+          "d": "NORWAY 25"
+        },
+        {
+          "s": "OANDA:JP225USD",
+          "d": "JAPAN 225"
+        },
+        {
+          "s": "PEPPERSTONE:CN50",
+          "d": "CHINA 50"
+        },
+        {
+          "s": "KRX:KOSPI",
+          "d": "SOUTH KOREA INDEX"
+        },
+        {
+          "s": "CAPITALCOM:HK50"
+        },
+        {
+          "s": "CAPITALCOM:SG25"
+        },
+        {
+          "s": "PEPPERSTONE:CA60",
+          "d": "CANADA 60"
+        },
+        {
+          "s": "CAPITALCOM:AU200"
+        },
+        {
+          "s": "BMFBOVESPA:IND1!",
+          "d": "BRAZIL INDEX"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+</body>
+</html>
